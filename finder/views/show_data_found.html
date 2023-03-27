@@ -1,0 +1,36 @@
+<div class="row text-center">
+	<div class="col">
+		<table class="table">
+			<thead>
+				<th colspan="3">Ficheros Encontrados</th>
+			</thead>
+			<thead>
+				<tr>
+					<td colspan="3" class="text-left">
+						String a Buscar: <b>{{ findme }}</b>
+						<br>
+						Extensiones de ficheros: <b>{{ extension }}</b>
+						<br>
+						PATH: <b>{{ folder }}</b>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="font-italic text-left">Esta APP está asociada a <b>Sublime Text</b>.  Puede personsalizarlo editando el fichero <b>app.php</b></td>
+				</tr>
+			</thead>
+			<thead>
+				<th>LINE</th>
+				<th>FILE</th>
+				<th>TEXT</th>
+			</thead>
+			<tbody class="text-left">
+				{{ registros_encontrados }}
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3"><a class="btn btn-primary" href="{{ url_back }}">{{ text_back }}</a></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</div>

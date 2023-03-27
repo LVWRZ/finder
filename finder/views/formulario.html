@@ -1,0 +1,76 @@
+<form action="process.php" class="form" method="POST">
+	<div class="row bg-light rounded border-1 py-4 px-2 mt-3">
+		<div class="col">
+			<div class="row w-75 mx-auto">
+				<div class="col">
+					<div class="row bg-info rounded">
+						<div class="col">
+							<h2>FINDER</h2>
+						</div>
+					</div>
+					<div class="row my-5">
+						<div class="col">
+							<input type="text" class="form-control" name="findme" min="3" placeholder="String a Buscar" required>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col">
+							<input type="text" class="form-control" name="folder" min="3" placeholder="Indique el PATH desde donde comenzará la búsqueda" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<label class="text-danger font-italic">IMPORTANTE: Tenga en cuenta su actual ubicación es {{ url_current }}</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<label class="text-info font-italic">Ejemplo:</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<label>Si has iniciado el FINDER y tu URL es <b>http://localhost/{tu_proyecto}/vendors/finder/</b></label>
+						</div>
+					</div>
+					<div class="row mb-5">
+						<div class="col">
+							<label>el <b>PATH</b> que deberías poner debería comerzar por: <b>../../ para salir del FINDER</b></label>
+						</div>
+					</div>
+					<div class="row my-5">
+						<div class="col">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" name="extension[]" value="html" checked>
+								<label class="form-check-label">HTML</label>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" name="extension[]" value="php" checked>
+								<label class="form-check-label">PHP</label>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" name="extension[]" value="css" checked>
+								<label class="form-check-label">CSS</label>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" name="extension[]" value="js" checked>
+								<label class="form-check-label">JS</label>
+							</div>
+						</div>
+					</div>
+					<div class="row mb-5">
+						<div class="col">
+							<input class="form-control btn btn-primary" type="submit" name="submit_ejecutar" value="Ejecutar">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</form>
